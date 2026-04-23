@@ -1,0 +1,242 @@
+@import url(../css/fonts.css);
+
+body {
+  font-family: "Roboto", "Gilroy", "Poppins", sans-serif;
+  font-size: 20px;
+}
+/* header */
+.header {
+  margin-bottom: 50px;
+}
+.header__title {
+  font-family: "Gilroy", sans-serif;
+  font-size: 40px;
+  color: blue;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 3px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.header__menu > .menu__item:not(:last-child) {
+  padding-bottom: 10px;
+}
+.menu__sublist > .sublist-menu__item {
+  padding: 5px 15px;
+}
+.menu__item {
+  color: rgb(163, 14, 89);
+}
+
+.sublist-menu__item a {
+  color: rgb(5, 130, 158);
+  text-decoration: underline dotted rgb(132, 1, 67);
+}
+
+/* main */
+/* font-properties*/
+
+[class$="-properties__title"] {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: red;
+  margin-bottom: 10px;
+}
+[class$="__sub-title"] {
+  text-align: center;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: capitalize;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  color: blue;
+  margin-bottom: 10px;
+}
+[class$="__description"] {
+  margin-bottom: 10px;
+  color: burlywood;
+}
+[class$="__label"] {
+  margin-bottom: 10px;
+  color: rgb(138, 25, 212);
+}
+
+.font-properties__list .list__item {
+  padding: 5px 20px;
+}
+
+.list__item--serif {
+  font-family: serif;
+}
+/* .list__item--sans-serif {
+  font-family: sans-serif;
+} */
+.list__item--monospace {
+  font-family: monospace;
+}
+.list__item--cursive {
+  font-family: cursive;
+}
+.list__item--fantasy {
+  font-family: fantasy;
+}
+
+.list__item--italic {
+  font-style: italic;
+}
+.list__item--oblique {
+  font-style: oblique;
+}
+
+.list__item--100 {
+  font-weight: 100;
+}
+.list__item--200 {
+  font-weight: 200;
+}
+.list__item--300 {
+  font-weight: 300;
+}
+.list__item--400 {
+  font-weight: 400;
+}
+.list__item--500 {
+  font-weight: 500;
+}
+.list__item--600 {
+  font-weight: 600;
+}
+.list__item--700 {
+  font-weight: 700;
+}
+.list__item--800 {
+  font-weight: 800;
+}
+.list__item--900 {
+  font-weight: 900;
+}
+.list__item--950 {
+  font-weight: 950;
+}
+
+/* text-properties */
+
+.text-properties__list .list__item {
+  padding: 5px 20px;
+}
+
+.list__item--keyword span {
+  color: red;
+}
+.list__item--hex span {
+  color: #ff0000;
+}
+.list__item--rgb span {
+  color: rgb(255, 0, 0);
+}
+.list__item--hsl {
+  color: hsla(0, 100%, 50%, 50%);
+}
+
+.list__item--line-through {
+  text-decoration: line-through;
+}
+.list__item--overline {
+  text-decoration: overline;
+}
+.list__item--underline {
+  text-decoration: underline;
+}
+
+.list__item--text-decoration-thickness {
+  text-decoration: underline;
+  text-decoration-color: #ff0000;
+  text-decoration-thickness: 2px;
+}
+.list__item--text-underline-offset {
+  text-decoration: underline;
+  text-decoration-color: #ff0000;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
+}
+.list__item--center {
+  text-align: center;
+}
+.list__item--right {
+  text-align: right;
+}
+.list__item--justify {
+  text-align: justify;
+}
+
+.text-shadow__info span {
+  text-shadow:
+    2px 2px 5px rgba(171, 250, 103, 0.56),
+    5px -5px 10px rgb(0, 119, 255);
+}
+
+.list__item--capitalize {
+  text-transform: capitalize;
+}
+.list__item--lowercase {
+  text-transform: lowercase;
+}
+.list__item--uppercase {
+  text-transform: uppercase;
+}
+.list__item--number {
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.list__item--percentage {
+  line-height: 150%;
+}
+.list__item--fixed {
+  line-height: 30px;
+}
+.letter-spacing__description {
+  letter-spacing: 4px;
+}
+.list__item--nowrap {
+  white-space: nowrap;
+}
+.word-spacing__description {
+  word-spacing: 24px;
+}
+
+/* agrolink */
+.agrolink {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.4; /* 28/20 */
+}
+
+.agrolink__title {
+  font-size: 50px;
+  color: #131313;
+  margin-bottom: 20px;
+  letter-spacing: -1.26px;
+  line-height: 1.3; /* 65/50 */
+  
+}
+
+.agrolink__title span {
+  color: #1aaf5b;
+  font-weight: 700;
+}
+
+.agrolink__description {
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: -0.5px;
+}

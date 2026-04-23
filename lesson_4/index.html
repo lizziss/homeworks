@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-властивості шрифтів та тексту</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">CSS-властивості шрифтів та тексту</h1>
+      <ol class="header__menu menu">
+        <li class="menu__item">
+          <a href="#font-properties">CSS-властивості шрифтів</a>
+          <ul class="menu__sublist sublist-menu">
+            <li class="sublist-menu__item">
+              <a href="#font-family">font-family</a>
+            </li>
+            <li class="sublist-menu__item">
+              <a href="#font-size">font-size</a>
+            </li>
+            <li class="sublist-menu__item">
+              <a href="#font-style">font-style</a>
+            </li>
+            <li class="sublist-menu__item">
+              <a href="#font-weight">font-weight</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#text-properties">CSS-властивості тексту</a>
+          <ul class="menu__sublist sublist-menu">
+            <li class="sublist-menu__item">
+              <a href="#color">color</a>
+            </li>
+            <li class="sublist-menu__item">
+              <a href="#text-align">text-align</a>
+            </li>
+            <li class="sublist-menu__item">
+              <a href="#text-decoration">text-decoration</a>
+            </li>
+            <li class="sublist-menu__item">
+              <a href="#text-shadow">text-shadow</a>
+            </li>
+            <li class="sublist-menu__item">
+              <a href="#text-transform">text-transform</a>
+            </li>
+            <li class="sublist-menu__item">
+              <a href="#line-height">line-height</a>
+            </li>
+            <li class="sublist-menu__item">
+              <a href="#letter-spacing">letter-spacing</a>
+            </li>
+            <li class="sublist-menu__item">
+              <a href="#white-space">white-space</a>
+            </li>
+            <li class="sublist-menu__item">
+              <a href="#word-spacing">word-spacing</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item"><a href="#agrolink">Agrolink</a></li>
+      </ol>
+    </header>
+    <main class="page">
+      <div id="font-properties" class="page__section font-properties">
+        <h2 class="font-properties__title">CSS-властивості шрифтів</h2>
+
+        <div class="font-properties__list">
+          <div
+            id="font-family"
+            class="font-properties__item font-properties__item--family font-family"
+          >
+            <h3 class="font-family__sub-title">font-family</h3>
+            <p class="font-family__description">
+              Визначає шрифт для тексту. Список шрифтів задається через кому:
+              перший доступний шрифт використовується.
+            </p>
+            <div class="font-family__info">
+              <h3 class="font-family__label">Типи шрифтів:</h3>
+              <ul class="font-family__list list">
+                <li class="list__item list__item--serif">
+                  serif — шрифт з зарубками (засічками);
+                </li>
+                <li class="list__item list__item--sans-serif">
+                  sans-serif — рублений (без зарубок);
+                </li>
+                <li class="list__item list__item--monospace">
+                  fantasy — декоративні;
+                </li>
+                <li class="list__item list__item--cursive">
+                  cursive — курсивні шрифти;
+                </li>
+                <li class="list__item list__item--fantasy">
+                  monospace — моноширинні.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="font-size"
+            class="font-properties__item font-properties__item--size font-size"
+          >
+            <h3 class="font-size__sub-title">font-size</h3>
+            <p class="font-size__description">
+              Визначає розмір шрифту. Можна використовувати як абсолютні, так і
+              відносні одиниці виміру.
+            </p>
+            <div class="font-size__info">
+              <h3 class="font-size__label">Одиниці виміру:</h3>
+              <ul class="font-size__list list">
+                <li class="list__item list__item--px">px — пікселі;</li>
+                <li class="list__item list__item--em">
+                  em — відносні одиниці;
+                </li>
+                <li class="list__item list__item--rem">
+                  rem — відносні одиниці;
+                </li>
+                <li class="list__item list__item--percent">% — відсотки.</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="font-style"
+            class="font-properties__item font-properties__item--style font-style"
+          >
+            <h3 class="font-style__sub-title">font-style</h3>
+            <p class="font-style__description">
+              Визначає стиль шрифту. Можливі значення:
+            </p>
+            <div class="font-style__info">
+              <h3 class="font-style__label">Можливі значення:</h3>
+              <ul class="font-style__list list">
+                <li class="list__item list__item--normal">
+                  normal(за замовчуванням) - звичайний (не змінений,
+                  стандартний) стиль;
+                </li>
+                <li class="list__item list__item--italic">italic — курсив;</li>
+                <li class="list__item list__item--oblique">
+                  oblique — нахилений стиль.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="font-weight"
+            class="font-properties__item font-properties__item--weight font-weight"
+          >
+            <h3 class="font-weight__sub-title">font-weight</h3>
+            <p class="font-weight__description">Визначає товщину шрифту.</p>
+            <div class="font-weight__info">
+              <h3 class="font-weight__label">
+                Можливі значення(Числове значення - словесне значення):
+              </h3>
+              <ul class="font-weight__list list">
+                <li class="list__item list__item--100">100 - Thin(Hairline)</li>
+                <li class="list__item list__item--200">
+                  200 - Extra Light(Ultra Light)
+                </li>
+                <li class="list__item list__item--300">300 - Light</li>
+                <li class="list__item list__item--400">
+                  400 - Normal(Regular)
+                </li>
+                <li class="list__item list__item--500">500 - Medium</li>
+                <li class="list__item list__item--600">
+                  600 - Semi Bold(Demi Bold)
+                </li>
+                <li class="list__item list__item--700">700 - Bold</li>
+                <li class="list__item list__item--800">
+                  800 - Extra Bold(Ultra Bold)
+                </li>
+                <li class="list__item list__item--900">900 - Black(Heavy)</li>
+                <li class="list__item list__item--950">
+                  950 - Extra Black(Ultra Black)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="text-properties" class="page__section text-properties">
+        <h2 class="text-properties__title">CSS-властивості тексту</h2>
+
+        <div class="text-properties__list">
+          <div
+            id="color"
+            class="text-properties__item text-properties__item--color color"
+          >
+            <h3 class="color__sub-title">color</h3>
+            <p class="color__description">Встановлює текстовий колір.</p>
+            <div class="color__info">
+              <h3 class="color__label">Призначення кольорів у CSS:</h3>
+              <ul class="color__list list">
+                <li class="list__item list__item--keyword">
+                  Ключові слова для кольорів,такі як <span> red </span>, blue,
+                  green, black і т. д.
+                </li>
+                <li class="list__item list__item--hex">
+                  Шістнадцятковий формат (HEX) — шістнадцяткові значення,
+                  наприклад <span> #FF0000 </span> для червоного.
+                </li>
+                <li class="list__item list__item--rgb">
+                  Формат RGB і RGBA — задає колір через значення
+                  <span>червоного</span>, зеленого і синього каналів у діапазоні
+                  від 0 до 255. RGBA додає прозорість через четвертий параметр
+                  (альфа-канал).
+                </li>
+                <li class="list__item list__item--hsl">
+                  Формат HSL і HSLA — задає колір через значення відтінку (Hue),
+                  насиченості (Saturation) і яскравості (Lightness). HSLA додає
+                  прозорість через четвертий параметр (альфа-канал).
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="text-align"
+            class="text-properties__item text-properties__item--text-align text-align"
+          >
+            <h3 class="text-align__sub-title">text-align</h3>
+            <p class="text-align__description">
+              Вирівнює текст всередині блочного елемента
+            </p>
+            <div class="text-align__info">
+              <h3 class="text-align__label">Значення властивості:</h3>
+              <ul class="text-align__list list">
+                <li class="list__item list__item--center">
+                  center - вирівнює по центру;
+                </li>
+                <li class="list__item list__item--left">
+                  left - вирівнює по лівому краю ВСТАНОВЛЕНО ЗА ЗАМОВЧУВАННЯМ
+                  тобто не потрібно писати, тому що текст за замовчуванням
+                  вирівняно по лівій стороні;
+                </li>
+
+                <li class="list__item list__item--right">
+                  right - вирівнює по правому краю;
+                </li>
+                <li class="list__item list__item--justify">
+                  justify - вирівнює текст по ширині об'єкта в якому він
+                  знаходиться, автоматично змінюючи пробіли між словами.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="text-decoration"
+            class="text-properties__item text-properties__item--text-decoration text-decoration"
+          >
+            <h3 class="text-decoration__sub-title">text-decoration</h3>
+            <p class="text-decoration__description">
+              Додає до тексту підкреслення, накреслення зверху або перекреслення
+            </p>
+            <div class="text-decoration__info">
+              <h3 class="text-decoration__label">
+                Базові значення властивості^
+              </h3>
+              <ul class="text-decoration__list list">
+                <li class="list__item list__item--line-through">
+                  line-through - закреслює текст;
+                </li>
+                <li class="list__item list__item--overline">
+                  overline - лінія над текстом;
+                </li>
+
+                <li class="list__item list__item--none">
+                  none - (за замовченням) скасовує встановлений раніше параметр.
+                </li>
+                <li class="list__item list__item--underline">
+                  underline - лінія під текстом;
+                </li>
+              </ul>
+
+              <h3 class="text-decoration__label">Додаткові властивості::</h3>
+              <ul class="text-decoration__list list">
+                <li class="list__item list__item--text-decoration-thickness">
+                  text-decoration-thickness - встановлює товщину лінії
+                </li>
+                <li class="list__item list__item--text-underline-offset">
+                  text-underline-offset - встановлює відстань від тексту до
+                  лінії
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="text-shadow"
+            class="text-properties__item text-properties__item--text-shadow text-shadow"
+          >
+            <h3 class="text-shadow__sub-title">text-shadow</h3>
+            <p class="text-shadow__description">
+              Додає тінь до тексту. горизонтальне_зміщення вертикальне_зміщення
+              розмір колір; Також може бути мультитінь, тіні записують через
+              кому
+            </p>
+            <div class="text-shadow__info">
+              <h3 class="text-shadow__label">
+                Gриклад запису мультитіні з двох тіней:
+              </h3>
+              <span>text-shadow: 2px 2px 5px #000, 5px -2px 10px red;</span>
+            </div>
+          </div>
+          <div
+            id="text-transform"
+            class="text-properties__item text-properties__item--text-transform text-transform"
+          >
+            <h3 class="text-transform__sub-title">text-transform</h3>
+            <p class="text-transform__description">
+              Змінює регістр (регистр) тексту.
+            </p>
+            <div class="text-transform__info">
+              <h3 class="text-transform__label">Значення властивості:</h3>
+              <ul class="text-align__list list">
+                <li class="list__item list__item--capitalize">
+                  capitalize - кожне слово починається з великої літери;
+                </li>
+                <li class="list__item list__item--lowercase">
+                  lowercase - усі літери прописні (нижній регістр);
+                </li>
+
+                <li class="list__item list__item--uppercase">
+                  uppercase - усі літери великі (верхній регістр);
+                </li>
+                <li class="list__item list__item--none">
+                  none - (за замовчанням) не змінює (або скасовує раніше
+                  встановлене) значення.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="line-height"
+            class="text-properties__item text-properties__item--line-height line-height"
+          >
+            <h3 class="line-height__sub-title">line-height</h3>
+            <p class="line-height__description">
+              Визначає міжрядковий інтервал (висота рядка) Розрахунок -
+              line-height / font-size
+            </p>
+            <div class="line-height__info">
+              <h3 class="line-height__label">Значення властивості:</h3>
+              <ul class="text-align__list list">
+                <li class="list__item list__item--number">
+                  Числове значення (1.5): відносна висота рядка до розміру
+                  шрифту.
+                </li>
+                <li class="list__item list__item--percentage">
+                  Відсотки (150%): висота рядка у відсотках від розміру шрифту.
+                </li>
+
+                <li class="list__item list__item--fixed">
+                  Фіксовані одиниці (наприклад, px): абсолютна висота рядка.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="letter-spacing"
+            class="text-properties__item text-properties__item--letter-spacing letter-spacing"
+          >
+            <h3 class="letter-spacing__sub-title">letter-spacing</h3>
+            <p class="letter-spacing__description">
+              Встановлення інтервалу між літерами (символами)
+            </p>
+          </div>
+          <div
+            id="white-space"
+            class="text-properties__item text-properties__item--white-space white-space"
+          >
+            <h3 class="white-space__sub-title">white-space</h3>
+            <p class="white-space__description">
+              Управління поведінкою пробілів між словами
+            </p>
+            <div class="white-space__info">
+              <h3 class="white-space__label">Значення властивості:</h3>
+              <ul class="text-align__list list">
+                <li class="list__item list__item--nowrap">
+                  nowrap - забороняє переносити (розривати) рядок; nowrap -
+                  забороняє переносити (розривати) рядок;nowrap - забороняє
+                  переносити (розривати) рядок; nowrap - забороняє переносити
+                  (розривати) рядок; nowrap - забороняє переносити (розривати)
+                  рядок;nowrap - забороняє переносити (розривати) рядок;
+                </li>
+                <li class="list__item list__item--normal">
+                  normal - (за замовчанням) не змінює (або скасовує раніше
+                  встановлене) значення.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="word-spacing"
+            class="text-properties__item text-properties__item--word-spacing word-spacing"
+          >
+            <h3 class="word-spacing__sub-title">word-spacing</h3>
+            <p class="word-spacing__description">
+              Встановлення інтервалу між словами
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="agrolink" class="page__section agrolink">
+        <h2 class="agrolink__title">Grown <span>by Nature</span> </h2>
+        <p class="agrolink__description">We grow our crops naturally. We are a fast-growing agricultural technology company passionate about ensuring food security. We leverage our technology to improve productivity & sales to promote food security for you and your family.
+
+      </div>
+    </main>
+    <footer class="footer">
+      <p>© 2026. Всі права захищені.</p>
+    </footer>
+  </body>
+</html>
